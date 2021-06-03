@@ -1,0 +1,70 @@
+:root{
+    --main-color:#FFF;
+    /*--menu-color:#A8CF45;*/
+    --menu-color:#26374D;
+    /*--footer-color: #D6B93C;*/
+    --footer-color:#b5a36a;
+}
+
+h2{
+    margin: 20px 30px;
+}
+
+.container__aside__sticky{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.main-container__profesors{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.main-container__students{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+@media screen and (max-width:500px){
+
+    .container__aside__sticky{
+        z-index: 10;
+        background-color: var(--menu-color);
+        opacity: 1;
+    }
+
+    .container__aside__sticky aside{
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width:1025px){
+
+    .container__aside__sticky{
+    background-color: var(--menu-color);
+    }
+    .container__aside__sticky aside{
+        flex-direction: row;
+        flex-grow: 0;
+    }
+}
+
+@media screen and (min-width:1025px){
+    .container__aside__sticky{
+        width: 100%;
+        flex-grow: 0;
+        max-width: 300px;
+    }
+
+    .container__aside__main{
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        flex-grow: 0;
+    }
+}

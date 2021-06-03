@@ -1,0 +1,40 @@
+
+h2{
+    margin: auto;
+}
+
+.main-container__latest-articles{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container__latest-articles__container{
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+}
+
+.main-container__latest-articles__container a{
+    text-decoration: none;
+    margin: 5px auto;
+    padding: 5px;
+    color: #000;
+    text-align: center;
+}
+
+.main-container__latest-articles__container a img{
+    position: relative;
+    width: 600;
+    height: 400px;
+    object-fit: cover;
+}
+
+.main-container__latest-articles__container a:hover{
+    background-color: var(--footer-color);
+    color:#fff;
+    transition: background-color .8s;
+}
+
+/*.main-container__latest-articles__container a img:hover{
+    filter: drop-shadow(3px 3px 3px #444);
+}*/
